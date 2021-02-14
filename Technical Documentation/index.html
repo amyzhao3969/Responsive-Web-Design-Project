@@ -1,0 +1,239 @@
+<html>
+
+    <head>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+    </head>
+
+    <div>
+        <title>Python Documentation</title>
+        <body>
+            <div id="flex-wrapper">
+                <nav id="navbar">
+                    <ul>
+                        <li><header id="nav-header">Python Documentation</header></li>
+                        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                        <li><a href="#Python-Syntax" class="nav-link">Python Syntax</a></li>
+                        <li><a href="#Control-Flow-Tools" class="nav-link">Control Flow Tools</a></li>
+                        <li><a href="#Data-Structures" class="nav-link">Data Structures</a></li>
+                        <li><a href="#References" class="nav-link">References</a></li>
+                    </ul>
+                </nav>
+
+                <main id="main-doc">
+                    <div id="main-doc-inner">
+                        <section id="home" class="logo">
+                            <img 
+                            id="image-logo"
+                            src="https://www.python.org/static/img/python-logo.png"
+                            alt="python log"/>
+                        </section>
+                    </div>
+
+                    <div id="main-doc-inner">
+                        <section id="Introduction" class="main-section">
+                            <header class="section_header">
+                                <h2>Introduction</h2>
+                            </header>
+                            <p>Python is an easy to learn, powerful programming language. 
+                                It has efficient high-level data structures and a simple but 
+                                effective approach to object-oriented programming. Python’s elegant 
+                                syntax and dynamic typing, together with its interpreted nature, 
+                                make it an ideal language for scripting and rapid application 
+                                development in many areas on most platforms.</p>
+                            <p>The Python interpreter and the extensive standard library are freely 
+                                available in source or binary form for all major platforms from the Python 
+                                Web site, <a href="https://www.python.org/">https://www.python.org/</a>, 
+                                and may be freely distributed. The same site also contains distributions of 
+                                and pointers to many free third party Python modules, programs and tools, 
+                                and additional documentation.</p>
+                            <blockquote>Python is a programming language that lets you work quickly and 
+                                integrate systems more effectively.</blockquote>
+                            <h3>Where is Python used?</h3>
+                            <p>
+                                Python is used successfully in thousands of real-world business applications around the world, including many large and mission critical systems. Here's where':
+                            </p>
+                            <ul>
+                                <li><b>YouTube</b></li>
+                                <li><b>Google</b></li>
+                                <li><a href="http://www.ilm.com/">Industrial Light & Magic</a></li>
+                                <li><a href="http://www.eve-online.com/">EVE Online</a></li>
+                                <li><a href="https://firaxis.com/">Firaxis Games</a></li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div id="main-doc-inner">
+                        <section id="Python-Syntax" class="main-section">
+                            <header class="section_header">
+                                <h2>Python Syntax</h2>
+                            </header>
+                            <p>Syntax refers to the structure of the language 
+                                (i.e., what constitutes a correctly-formed program).</p>
+                            <h3>Hello World</h3>
+                            <p>Python syntax can be executed by writing directly in the Command Line:</p>
+                            <code>
+>>> print("Hello, World!")
+Hello, World!         
+                            </code>
+                            <p>Or by creating a python file on the server, using the .py file extension, 
+                                and running it in the Command Line:</p>
+                            <code>
+C:\Users\Your Name>python myfile.py
+                            </code>
+
+                            <h3>Python Variables</h3>
+                            <p>In Python, variables are created when you assign a value to it:</p>
+                            <code>
+x = 5
+y = "Hello, World!"
+                            </code>
+
+                            <h3>Python Indentation</h3>
+                            <p>Indentation refers to the spaces at the beginning of a code line.
+                                Where in other programming languages the indentation in code is 
+                                for readability only, the indentation in Python is very important.
+                                Python uses indentation to indicate a block of code.</p>
+                            <code>
+if 5 > 2:
+    print("Five is greater than two!")
+                            </code>
+                        </section>
+                    </div>
+
+                    <div id="main-doc-inner">
+                        <section id="Control-Flow-Tools" class="main-section">
+                            <header class="section_header">
+                                <h2>Control Flow Tools</h2>
+                            </header>
+                            <p>A program’s control flow is the order in which the program’s code executes. The 
+                                control flow of a Python program is regulated by conditional statements, loops, 
+                                and function calls. </p>
+                            <h3>The If Statement</h3>
+                            <p>Often, you need to execute some statements only if some condition holds, or 
+                                choose statements to execute depending on several mutually exclusive conditions. 
+                                The Python compound statement if, which uses if, elif, and else clauses, lets you 
+                                conditionally execute blocks of statements. Here’s a typical if statement:
+                            </p>
+                            <code>
+if x < 0:
+    print "x is negative"
+elif x % 2:
+    print "x is positive and odd"
+else:
+    print "x is even and non-negative"
+                            </code>
+
+                            <h3>The While Statement</h3>
+                            <p>The while statement in Python supports repeated execution of a statement or block 
+                                of statements that is controlled by a conditional expression. Here’s a typical while 
+                                statement:
+                            </p>
+                            <code>
+count = 0
+while x > 0:
+    x = x // 2            # truncating division
+    count += 1
+print "The approximate log2 is", count
+                            </code>
+
+                            <h3>The For Statement</h3>
+                            <p>The for statement in Python supports repeated execution of a statement or block of 
+                                statements that is controlled by an iterable expression. Here’s a typical for statement:
+                            </p>
+                            <code>
+for letter in "ciao":
+print "give me a", letter, "..."
+                            </code>
+
+                            <h3>Iterators</h3>
+                            <p>An iterator is any object i such that you can call i .next( ) without any arguments. i .next( ) 
+                                returns the next item of iterator i, or, when iterator i has no more items, raises a 
+                                StopIteration exception.
+                            </p>
+                            <code>
+for i in xrange(n):
+statement(s)
+                            </code>
+
+                        </section>
+                    </div>
+
+                    <div id="main-doc-inner">
+                        <section id="Data-Structures" class="main-section">
+                            <header class="section_header">
+                                <h2>Data Structures</h2>
+                            </header>
+                            <p>Data structures are the fundamental constructs around which you build your programs. 
+                                Each data structure provides a particular way of organizing data so it can be 
+                                accessed efficiently, depending on your use case. Python ships with an extensive 
+                                set of data structures in its <a href="https://docs.python.org/3/library/index.html">standard library</a>.</p>
+                            <h3>Dictionaries, Maps, and Hash Tables</h3>
+                            <p>In Python, dictionaries (or dicts for short) are a central data structure. Dicts store an arbitrary number of 
+                                objects, each identified by a unique dictionary key.</p>
+                            <p>Dictionaries are also often called maps, hashmaps, lookup tables, or associative arrays. They allow for the 
+                                efficient lookup, insertion, and deletion of any object associated with a given key.</p>
+                            <p>Here is a small example using a dictionary:</p>
+                            <code>
+>>> tel = {'jack': 4098, 'sape': 4139}
+>>> tel['guido'] = 4127
+>>> tel
+{'jack': 4098, 'sape': 4139, 'guido': 4127}
+>>> tel['jack']
+4098
+>>> del tel['sape']
+>>> tel['irv'] = 4127
+>>> tel
+{'jack': 4098, 'guido': 4127, 'irv': 4127}
+>>> list(tel)
+['jack', 'guido', 'irv']
+>>> sorted(tel)
+['guido', 'irv', 'jack']
+>>> 'guido' in tel
+True
+>>> 'jack' not in tel
+False
+                            </code>
+
+                            <h3>Lists</h3>
+                            <p>Python lists can hold arbitrary elements—everything is an object in Python, including 
+                                functions. Therefore, you can mix and match different kinds of data types and store 
+                                them all in a single list.
+                            </p>
+                            <code>
+>>> arr = ["one", "two", "three"]
+>>> arr[0]
+'one'
+
+>>> # Lists have a nice repr:
+>>> arr
+['one', 'two', 'three']
+                            </code>
+                </section>
+                </div>
+
+                <div id="main-doc-inner">
+                    <section id="References" class="main-section">
+                        <header class="section_header">
+                            <h2>References</h2>
+                        </header>
+                        <ul>
+                            <li><a href="https://docs.python.org/3/tutorial/">Python</a></li>
+                            <li><a href="https://www.w3schools.com/python/python_syntax.asp">w3schools</a></li>
+                            <li><a href="https://www.oreilly.com/library/view/python-in-a/0596001886/ch04s09.html">O'Reilly</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+                </main>
+            </div>
+
+            
+
+
+        </body>
+
+    </div>
+
+
+</html>

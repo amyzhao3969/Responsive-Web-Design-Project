@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #292929
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #292929;
+}
+
+a:hover {
+    color: #c46902;
+}
+
+header, h2 {
+    font-size: 1.9rem;
+}
+
+blockquote {
+    background: #F0F8FF;
+    border-left: 5px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+code {
+    
+    display: flex;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin: 7px;
+    font-family: monospace;
+    border-left: 5px solid #3d7e9a;
+    border-radius: 5px;
+    
+}
+
+/* --- Main Page Layout --- */
+
+/*Flex Container*/
+#flex-wrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*flex-items*/
+#main-doc {
+    flex: 4;
+    overflow: scroll;
+    background-color: #2F4F4F;
+}
+
+#main-doc-inner {
+    margin: 1rem 12rem 1rem 2rem;
+    padding: 1rem 3rem 1rem 3rem;
+    background-color: white;
+    border-radius: 7px;
+}
+
+/* -- NAVIGATION -- */
+/*flex items*/
+#navbar {
+    display:fixed;
+}
+nav {
+    flex: 1;
+    width: 20vw;
+    background-color: #2F4F4F;
+    text-align: center;
+}
+
+nav ul {
+    margin: 1rem 0 0 1rem;
+    padding: 0;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+nav li {
+    background-color: white;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.625rem 0.625rem;
+}
+
+.nav-link:hover {
+    background-color: rgb(241, 223, 223);
+}
+.logo {
+    width: 10vw;
+}
+
+
+.logo > img {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media all and (max-width: 1100px) {
+    #main-doc-inner {
+        margin: 0 1rem 1rem 2rem;
+        padding: 1rem 4.5rem;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 840px) {
+    #flex-wrapper {
+        display: inline;
+        min-height: 100vh;
+    }
+
+    nav {
+        min-height: 45vh; 
+        width: 100%;
+    }
+    nav ul {
+        margin: 0 2rem 0 2rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    #main-doc-inner {
+        margin: 0 1rem 1rem 1rem;
+        padding: 1rem;
+    }
+    
+    nav ul {
+        margin: 0 1.5rem 0 1.5rem;
+  }
+
+    code {
+        overflow: auto;
+    }
+}
+
